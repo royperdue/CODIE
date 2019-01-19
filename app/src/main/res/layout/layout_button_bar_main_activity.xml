@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/pad10dp"
+    android:gravity="bottom|center_horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/diagramButton"
+        style="?android:attr/buttonBarButtonStyle"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginLeft="@dimen/pad10dp"
+        android:layout_marginTop="@dimen/pad10dp"
+        android:layout_marginRight="@dimen/pad10dp"
+        android:layout_marginBottom="@dimen/pad10dp"
+        android:background="@drawable/ic_bubble_chart_white_36dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:src="?android:attr/selectableItemBackground" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/testButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/pad20dp"
+        android:layout_gravity="center"
+        android:text="Test"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/txt20sp"
+        android:src="?android:attr/selectableItemBackground" />
+</LinearLayout>

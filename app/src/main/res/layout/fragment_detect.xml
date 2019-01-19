@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/pad10dp"
+    android:layout_marginTop="@dimen/pad10dp"
+    android:layout_marginRight="@dimen/pad10dp"
+    android:layout_marginBottom="@dimen/pad10dp"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.DetectFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@+id/buttonBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/dialogue_title"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_title_size" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:gravity="center"
+                android:maxLines="4"
+                android:minLines="1"
+                android:scrollbars="vertical"
+                android:text="@string/sample_dialogue_message"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_message_size" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <ImageView
+                android:id="@+id/previewImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/objectCheckBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/object"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt18sp" />
+
+            <CheckBox
+                android:id="@+id/componentObjectCheckBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/component_object"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt18sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyNameTextInputLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_name"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyNameEditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType=""
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyExpectedTypeTextInputLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_type"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyExpectedTypeEditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyDescriptionTextInputLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_description"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyDescriptionEditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/objectCheckBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/object"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt18sp" />
+
+            <CheckBox
+                android:id="@+id/componentObjectCheckBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/component_object"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt18sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyNameTextInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_name"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyNameEditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType=""
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyExpectedTypeTextInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_type"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyExpectedTypeEditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyDescriptionTextInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_description"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyDescriptionEditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/objectCheckBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/object"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt18sp" />
+
+            <CheckBox
+                android:id="@+id/componentObjectCheckBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/component_object"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt18sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyNameTextInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_name"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyNameEditText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyExpectedTypeTextInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_type"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyExpectedTypeEditText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyDescriptionTextInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_description"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyDescriptionEditText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:id="@+id/objectCheckBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/object"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt18sp" />
+
+            <CheckBox
+                android:id="@+id/componentObjectCheckBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pad10dp"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/component_object"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt18sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyNameTextInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_name"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyNameEditText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyExpectedTypeTextInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_type"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyExpectedTypeEditText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/objectPropertyDescriptionTextInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad20dp"
+                android:hint="@string/enter_the_object_property_description"
+                app:hintTextAppearance="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/objectPropertyDescriptionEditText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/pad20dp"
+                    android:paddingTop="@dimen/text_title_message_space"
+                    android:singleLine="true"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textColorHint="@color/divider"
+                    android:textSize="@dimen/button_text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/buttonBar"
+        layout="@layout/layout_button_bar_detect" />
+</RelativeLayout>

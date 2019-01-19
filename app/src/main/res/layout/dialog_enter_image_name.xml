@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/pad20dp"
+        android:text="@string/image_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt18sp" />
+
+    <EditText
+        android:id="@+id/imageNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pad4dp"
+        android:layout_marginTop="@dimen/pad16dp"
+        android:layout_marginRight="@dimen/pad4dp"
+        android:layout_marginBottom="@dimen/pad4dp"
+        android:hint="@string/enter_an_image_name"
+        android:inputType="text" />
+</LinearLayout>

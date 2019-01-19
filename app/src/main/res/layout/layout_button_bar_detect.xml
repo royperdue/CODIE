@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_detect"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/pad10dp"
+    android:layout_marginBottom="@dimen/pad16dp"
+    android:paddingStart="@dimen/pad30dp"
+    android:gravity="left"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/downloadButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/pad10dp"
+        android:layout_gravity="left"
+        android:background="@color/transparent"
+        android:text="Start"
+        android:textSize="@dimen/txt20sp"
+        android:textColor="@android:color/holo_green_dark"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/detectButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/pad10dp"
+        android:background="@color/transparent"
+        android:text="Detect"
+        android:textSize="@dimen/txt20sp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/saveButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/transparent"
+        android:text="Save"
+        android:textSize="@dimen/txt20sp"
+        android:textColor="@android:color/holo_orange_dark"/>
+</LinearLayout>

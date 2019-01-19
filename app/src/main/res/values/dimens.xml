@@ -1,0 +1,58 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="txt12sp">12sp</dimen>
+    <dimen name="pad500dp">500dp</dimen>
+    <dimen name="pad1000dp">1000dp</dimen>
+    <dimen name="pad5dp">5dp</dimen>
+    <dimen name="pad60dp">60dp</dimen>
+    <dimen name="txt18sp">18sp</dimen>
+    <dimen name="txt10sp">10sp</dimen>
+    <dimen name="pad300dp">300dp</dimen>
+    <dimen name="pad10dp">10dp</dimen>
+    <dimen name="pad20dp">20dp</dimen>
+
+    <dimen name="size_divider">1dp</dimen>
+    <dimen name="radius_dialogue">10dp</dimen>
+    <dimen name="radius_actionsheet">5dp</dimen>
+    <dimen name="dialogue_margin_side">30dp</dimen>
+    <dimen name="dialogue_margin_side_land">50dp</dimen>
+    <dimen name="dialogue_margin_top">30dp</dimen>
+    <dimen name="button_height">44dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="button_margin">10dp</dimen>
+    <dimen name="text_margin_border">18dp</dimen>
+    <dimen name="text_margin_bottom">14dp</dimen>
+    <dimen name="text_message_margin_top">12dp</dimen>
+    <dimen name="text_message_margin_bottom">4dp</dimen>
+    <dimen name="text_title_size">20sp</dimen>
+    <dimen name="text_message_size">14sp</dimen>
+    <dimen name="text_title_message_space">6dp</dimen>
+    <dimen name="text_input_margin_bottom">10dp</dimen>
+
+    <dimen name="standard_field_width">160dp</dimen>
+    <dimen name="margin_1">8dp</dimen>
+    <dimen name="margin_2">16dp</dimen>
+    <dimen name="pad40dp">40dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">88dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="editor_size">35dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="large_margin">16dp</dimen>
+    <dimen name="pad80dp">80dp</dimen>
+    <dimen name="pad4dp">4dp</dimen>
+    <dimen name="pad16dp">16dp</dimen>
+    <dimen name="txt20sp">20sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="pad12dp">12dp</dimen>
+    <dimen name="txt14sp">14sp</dimen>
+    <dimen name="pad30dp">30dp</dimen>
+</resources>

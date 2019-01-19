@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/pad12dp"
+    android:layout_marginBottom="@dimen/pad10dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="@+id/graph_container"
+    app:layout_anchorGravity="bottom">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/diagramButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:text="Graph"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/txt20sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/addNodeButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:text="+ Node"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="@dimen/txt20sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/removeNodeButton"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:text="- Node"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/txt20sp" />
+</LinearLayout>

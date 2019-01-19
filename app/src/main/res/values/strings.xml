@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Codie</string>
+
+
+    <string name="ok">OK</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="component_object">Is a component object.</string>
+    <string name="object">object</string>
+
+    <string name="title_request_permission">Requesting permissions......</string>
+    <string name="dialogue_title">Dialogue Title</string>
+    <string name="sample_dialogue_message">Sample Dialogue Message</string>
+
+
+    <string name="log_out">Log out</string>
+    <string name="log_in">Log in</string>
+
+    <string name="permission_read_external_storage">The app requires read external storage permissions.</string>
+
+    <string name="progress_downloading">Downloading…</string>
+    <string name="progress_uploading">Uploading…</string>
+    <string name="progress_auth">Signing In…</string>
+
+    <string name="upload_success">Upload finished</string>
+    <string name="upload_failure">Upload failed</string>\
+
+    <string name="title_error">Error</string>
+
+    <string name="message_no_config">No configuration options for this panel</string>
+    <string name="message_permission_denied">Read storage permission denied.  Cannot proceed with manual DFU.</string>
+
+    <string name="error_unsupported_module">module (sensor) is not supported on this board</string>
+
+    <string name="config_name_temp_data_pin">Data Pin</string>
+    <string name="config_name_temp_pulldown_pin">Pulldown Pin</string>
+    <string name="config_name_temp_active">Active</string>
+    <string name="config_name_temp_source">Temperature Source</string>
+
+    <string name="config_name_ad_device_name">Device Name</string>
+    <string name="config_name_ad_interval">Advertising Interval</string>
+    <string name="config_name_ad_timeout">Advertising Timeout</string>
+    <string name="config_name_ad_tx">Advertising Tx Power</string>
+
+    <string name="label_cancel">Cancel</string>
+    <string name="label_ok">OK</string>
+    <string name="label_start_logging">Start Logging</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_my_website">https://mywebsite.com</string>
+    <string name="navigation_fragment_home">Home</string>
+    <string name="navigation_fragment_communication">Communicate</string>
+    <string name="navigation_fragment_gallery">Image Gallery</string>
+    <string name="navigation_fragment_detection">Detect</string>
+    <string name="navigation_fragment_instruction">Instruct</string>
+    <string name="navigation_fragment_search">Image Search</string>
+    <string name="navigation_fragment_logging">Logging</string>
+    <string name="navigation_fragment_settings">Settings</string>
+
+    <string name="hint_search">Enter search query…</string>
+    <string name="search_not_found">Search not found</string>
+    <string name="img_size">Image Size:</string>
+    <string name="img_color">Image Color:</string>
+    <string name="img_type">Image Type:</string>
+    <string name="img_site">Site Filter:</string>
+    <string name="save">Save</string>
+    <string name="hint_img_site">Enter website</string>
+    <string name="invalid_data">Invalid data received</string>
+    <string name="invalid_query">Please enter a valid search query</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="service_unavailable">Oops!!! Service unavailable. Try later!!!</string>
+    <string name="image_name">Image Name</string>
+    <string name="enter_an_image_name">Enter an image name...</string>
+    <string name="enter_the_object_property_name">Enter the object property name...</string>
+    <string name="enter_the_object_property_type">Enter the object property type...</string>
+    <string name="enter_the_object_property_description">Enter the object property description...</string>
+    <string name="add_data">Add Data</string>
+    <string name="remove_data">Remove Data</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="message_detecting_objects">Detecting objects</string>
+</resources>

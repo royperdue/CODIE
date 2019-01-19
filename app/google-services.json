@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "555586102066",
+    "firebase_url": "https://codie-cloud.firebaseio.com",
+    "project_id": "codie-cloud",
+    "storage_bucket": "codie-cloud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555586102066:android:7b767bc356525ad2",
+        "android_client_info": {
+          "package_name": "com.codie.simulation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555586102066-pjpkjjf1oij7gu6q6r929lbloj480qk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc2qcmMvnTVFIeR7RzYLErSuzMi6ViBcI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
